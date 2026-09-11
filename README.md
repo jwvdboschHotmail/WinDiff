@@ -1,5 +1,8 @@
 # WinDiff
 
+Download latest version from Releases:       
+https://github.com/windiq/WinDiff/releases/tag/v1.3.1
+
 ## Introduction
 
 WinDiff is a graphical comparison utility for Windows that helps IT specialists identify differences between text files and directory contents. Its primary use is change inspection: an administrator, developer, release engineer, or support specialist can compare two versions of a configuration file, script, log extract, source file, or deployment directory and quickly determine what has changed.
@@ -28,4 +31,4 @@ A practical deployment check can begin by comparing a tested build directory wit
 
 Directory results should be interpreted carefully. A reported difference tells you that corresponding files are not equivalent; it does not explain whether the difference is valid. Open important text-file pairs and inspect their line-level changes. Prioritize executable scripts, startup files, configuration files, templates, and resources that can affect runtime behavior.
 
-For consistent and repeatable validation, use a controlled baseline instead of comparing against an arbitrary older directory. Take environment-specific files into account, as legitimate differences may exist across development, staging, and production environments. Once remediation or deployment is complete, rerun the directory comparison to confirm that missing files have been restored, unauthorized changes removed, and the target environment aligns with the expected state.
+To ensure reliable comparison results, validate the directory against a defined baseline rather than a randomly selected previous version. Be mindful of environment-specific files, since development, staging, and production may contain expected variations. After fixes or deployment are applied, repeat the comparison to verify that missing files are back in place, unintended changes have been corrected, and the target matches the desired configuration.
